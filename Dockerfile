@@ -10,7 +10,7 @@
 
 FROM selenium/standalone-chrome
 
-RUN apt-get update
+#RUN apt-get update
 RUN apt-get install -y pip
 
 # Install Python dependencies.
