@@ -13,6 +13,10 @@ FROM selenium/standalone-chrome
 #RUN apt-get update
 RUN apt-get install -y pip
 
+#install webdriver
+RUN wget --no-check-certificate https://chromedriver.storage.googleapis.com/93.0.4577.63/chromedriver_linux64.zip -P /opt/google/chrome
+
+
 # Install Python dependencies.
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
