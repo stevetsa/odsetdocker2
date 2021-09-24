@@ -11,7 +11,7 @@
 FROM selenium/standalone-chrome
 
 USER root
-#RUN apt-get update
+RUN apt-get update
 RUN apt-get install -y pip
 
 #install webdriver
